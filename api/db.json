@@ -9,7 +9,8 @@
             "skin_color": "fair",
             "eye_color": "blue",
             "birth_year": "19BBY",
-            "gender": "male"
+            "gender": "male",
+            "homeworld": 1
         },
         {
             "id": 2,
@@ -20,7 +21,8 @@
             "skin_color": "gold",
             "eye_color": "yellow",
             "birth_year": "112BBY",
-            "gender": "n/a"
+            "gender": "n/a",
+            "homeworld": 1
         },
         {
             "id": 3,
@@ -31,7 +33,8 @@
             "skin_color": "white, blue",
             "eye_color": "red",
             "birth_year": "33BBY",
-            "gender": "n/a"
+            "gender": "n/a",
+            "homeworld": 2
         },
         {
             "id": 4,
@@ -42,7 +45,8 @@
             "skin_color": "white",
             "eye_color": "yellow",
             "birth_year": "41.9BBY",
-            "gender": "male"
+            "gender": "male",
+            "homeworld": 1
         },
         {
             "id": 5,
@@ -53,7 +57,8 @@
             "skin_color": "light",
             "eye_color": "brown",
             "birth_year": "19BBY",
-            "gender": "female"
+            "gender": "female",
+            "homeworld": 47
         },
         {
             "id": 6,
@@ -64,7 +69,8 @@
             "skin_color": "light",
             "eye_color": "blue",
             "birth_year": "52BBY",
-            "gender": "male"
+            "gender": "male",
+            "homeworld": 1
         },
         {
             "id": 7,
@@ -75,7 +81,8 @@
             "skin_color": "light",
             "eye_color": "blue",
             "birth_year": "47BBY",
-            "gender": "female"
+            "gender": "female",
+            "homeworld": 1
         },
         {
             "id": 8,
@@ -86,7 +93,8 @@
             "skin_color": "white, red",
             "eye_color": "red",
             "birth_year": "unknown",
-            "gender": "n/a"
+            "gender": "n/a",
+            "homeworld": 1
         },
         {
             "id": 9,
@@ -97,7 +105,8 @@
             "skin_color": "light",
             "eye_color": "brown",
             "birth_year": "24BBY",
-            "gender": "male"
+            "gender": "male",
+            "homeworld": 1
         },
         {
             "id": 10,
@@ -108,7 +117,8 @@
             "skin_color": "fair",
             "eye_color": "blue-gray",
             "birth_year": "57BBY",
-            "gender": "male"
+            "gender": "male",
+            "homeworld": 3
         },
         {
             "id": 11,
@@ -119,7 +129,8 @@
             "skin_color": "fair",
             "eye_color": "blue",
             "birth_year": "41.9BBY",
-            "gender": "male"
+            "gender": "male",
+            "homeworld": 1
         },
         {
             "id": 12,
@@ -130,7 +141,8 @@
             "skin_color": "fair",
             "eye_color": "blue",
             "birth_year": "64BBY",
-            "gender": "male"
+            "gender": "male",
+            "homeworld": 4
         },
         {
             "id": 13,
@@ -141,7 +153,8 @@
             "skin_color": "unknown",
             "eye_color": "blue",
             "birth_year": "200BBY",
-            "gender": "male"
+            "gender": "male",
+            "homeworld": 5
         },
         {
             "id": 14,
@@ -152,7 +165,8 @@
             "skin_color": "fair",
             "eye_color": "brown",
             "birth_year": "29BBY",
-            "gender": "male"
+            "gender": "male",
+            "homeworld": 6
         },
         {
             "id": 15,
@@ -163,7 +177,8 @@
             "skin_color": "green",
             "eye_color": "black",
             "birth_year": "44BBY",
-            "gender": "male"
+            "gender": "male",
+            "homeworld": 7
         },
         {
             "id": 16,
@@ -174,7 +189,8 @@
             "skin_color": "green-tan",
             "eye_color": "orange",
             "birth_year": "600BBY",
-            "gender": "hermaphrodite"
+            "gender": "hermaphrodite",
+            "homeworld": 8
         },
         {
             "id": 17,
@@ -185,7 +201,8 @@
             "skin_color": "fair",
             "eye_color": "blue",
             "birth_year": "unknown",
-            "gender": "male"
+            "gender": "male",
+            "homeworld": 9
         },
         {
             "id": 18,
@@ -196,7 +213,8 @@
             "skin_color": "green",
             "eye_color": "brown",
             "birth_year": "896BBY",
-            "gender": "male"
+            "gender": "male",
+            "homeworld": 49
         },
         {
             "id": 19,
@@ -207,7 +225,8 @@
             "skin_color": "pale",
             "eye_color": "yellow",
             "birth_year": "82BBY",
-            "gender": "male"
+            "gender": "male",
+            "homeworld": 2
         },
         {
             "id": 20,
@@ -218,7 +237,8 @@
             "skin_color": "fair",
             "eye_color": "brown",
             "birth_year": "31.5BBY",
-            "gender": "male"
+            "gender": "male",
+            "homeworld": 42
         },
         {
             "id": 21,
@@ -229,7 +249,8 @@
             "skin_color": "metal",
             "eye_color": "red",
             "birth_year": "15BBY",
-            "gender": "none"
+            "gender": "none",
+            "homeworld": 49
         },
         {
             "id": 22,
@@ -240,7 +261,8 @@
             "skin_color": "green",
             "eye_color": "red",
             "birth_year": "53BBY",
-            "gender": "male"
+            "gender": "male",
+            "homeworld": 10
         },
         {
             "id": 23,
@@ -251,7 +273,8 @@
             "skin_color": "dark",
             "eye_color": "brown",
             "birth_year": "31BBY",
-            "gender": "male"
+            "gender": "male",
+            "homeworld": 11
         },
         {
             "id": 24,
@@ -262,7 +285,8 @@
             "skin_color": "light",
             "eye_color": "blue",
             "birth_year": "37BBY",
-            "gender": "male"
+            "gender": "male",
+            "homeworld": 12
         },
         {
             "id": 25,
@@ -273,7 +297,8 @@
             "skin_color": "brown",
             "eye_color": "orange",
             "birth_year": "41BBY",
-            "gender": "male"
+            "gender": "male",
+            "homeworld": 13
         },
         {
             "id": 26,
@@ -284,7 +309,8 @@
             "skin_color": "fair",
             "eye_color": "blue",
             "birth_year": "48BBY",
-            "gender": "female"
+            "gender": "female",
+            "homeworld": 14
         },
         {
             "id": 27,
@@ -295,7 +321,8 @@
             "skin_color": "fair",
             "eye_color": "brown",
             "birth_year": "unknown",
-            "gender": "male"
+            "gender": "male",
+            "homeworld": 49
         },
         {
             "id": 28,
@@ -306,7 +333,8 @@
             "skin_color": "brown",
             "eye_color": "brown",
             "birth_year": "8BBY",
-            "gender": "male"
+            "gender": "male",
+            "homeworld": 15
         },
         {
             "id": 29,
@@ -317,7 +345,8 @@
             "skin_color": "grey",
             "eye_color": "black",
             "birth_year": "unknown",
-            "gender": "male"
+            "gender": "male",
+            "homeworld": 16
         },
         {
             "id": 30,
@@ -328,7 +357,8 @@
             "skin_color": "fair",
             "eye_color": "blue",
             "birth_year": "92BBY",
-            "gender": "male"
+            "gender": "male",
+            "homeworld": 49
         },
         {
             "id": 31,
@@ -339,7 +369,8 @@
             "skin_color": "mottled",
             "eye_color": "red",
             "birth_year": "unknown",
-            "gender": "male"
+            "gender": "male",
+            "homeworld": 17
         },
         {
             "id": 32,
@@ -350,7 +381,8 @@
             "skin_color": "fair",
             "eye_color": "blue",
             "birth_year": "91BBY",
-            "gender": "male"
+            "gender": "male",
+            "homeworld": 30
         },
         {
             "id": 33,
@@ -361,7 +393,8 @@
             "skin_color": "light",
             "eye_color": "brown",
             "birth_year": "46BBY",
-            "gender": "female"
+            "gender": "female",
+            "homeworld": 2
         },
         {
             "id": 34,
@@ -372,7 +405,8 @@
             "skin_color": "orange",
             "eye_color": "orange",
             "birth_year": "52BBY",
-            "gender": "male"
+            "gender": "male",
+            "homeworld": 2
         },
         {
             "id": 35,
@@ -383,7 +417,8 @@
             "skin_color": "grey",
             "eye_color": "orange",
             "birth_year": "unknown",
-            "gender": "male"
+            "gender": "male",
+            "homeworld": 2
         },
         {
             "id": 36,
@@ -394,7 +429,8 @@
             "skin_color": "green",
             "eye_color": "orange",
             "birth_year": "unknown",
-            "gender": "male"
+            "gender": "male",
+            "homeworld": 2
         },
         {
             "id": 37,
@@ -405,7 +441,8 @@
             "skin_color": "fair",
             "eye_color": "blue",
             "birth_year": "unknown",
-            "gender": "male"
+            "gender": "male",
+            "homeworld": 2
         },
         {
             "id": 38,
@@ -416,7 +453,8 @@
             "skin_color": "blue, grey",
             "eye_color": "yellow",
             "birth_year": "unknown",
-            "gender": "male"
+            "gender": "male",
+            "homeworld": "Toydaria"
         },
         {
             "id": 39,
@@ -427,7 +465,8 @@
             "skin_color": "grey, red",
             "eye_color": "orange",
             "birth_year": "unknown",
-            "gender": "male"
+            "gender": "male",
+            "homeworld": 19
         },
         {
             "id": 40,
@@ -438,7 +477,8 @@
             "skin_color": "dark",
             "eye_color": "brown",
             "birth_year": "62BBY",
-            "gender": "male"
+            "gender": "male",
+            "homeworld": 2
         },
         {
             "id": 41,
@@ -449,7 +489,8 @@
             "skin_color": "fair",
             "eye_color": "brown",
             "birth_year": "72BBY",
-            "gender": "female"
+            "gender": "female",
+            "homeworld": 1
         },
         {
             "id": 42,
@@ -460,7 +501,8 @@
             "skin_color": "red",
             "eye_color": "yellow",
             "birth_year": "54BBY",
-            "gender": "male"
+            "gender": "male",
+            "homeworld": 20
         },
         {
             "id": 43,
@@ -471,7 +513,8 @@
             "skin_color": "pale",
             "eye_color": "pink",
             "birth_year": "unknown",
-            "gender": "male"
+            "gender": "male",
+            "homeworld": 21
         },
         {
             "id": 44,
@@ -482,7 +525,8 @@
             "skin_color": "blue",
             "eye_color": "hazel",
             "birth_year": "48BBY",
-            "gender": "female"
+            "gender": "female",
+            "homeworld": 21
         },
         {
             "id": 45,
@@ -493,7 +537,8 @@
             "skin_color": "grey, blue",
             "eye_color": "unknown",
             "birth_year": "unknown",
-            "gender": "male"
+            "gender": "male",
+            "homeworld": 22
         },
         {
             "id": 46,
@@ -504,7 +549,8 @@
             "skin_color": "blue, grey",
             "eye_color": "yellow",
             "birth_year": "unknown",
-            "gender": "male"
+            "gender": "male",
+            "homeworld": 23
         },
         {
             "id": 47,
@@ -515,7 +561,8 @@
             "skin_color": "white, blue",
             "eye_color": "black",
             "birth_year": "unknown",
-            "gender": "male"
+            "gender": "male",
+            "homeworld": 24
         },
         {
             "id": 48,
@@ -526,7 +573,8 @@
             "skin_color": "grey, green",
             "eye_color": "orange",
             "birth_year": "unknown",
-            "gender": "male"
+            "gender": "male",
+            "homeworld": 25
         },
         {
             "id": 49,
@@ -537,7 +585,8 @@
             "skin_color": "dark",
             "eye_color": "brown",
             "birth_year": "72BBY",
-            "gender": "male"
+            "gender": "male",
+            "homeworld": "Haruun Kal"
         },
         {
             "id": 50,
@@ -548,7 +597,8 @@
             "skin_color": "pale",
             "eye_color": "yellow",
             "birth_year": "92BBY",
-            "gender": "male"
+            "gender": "male",
+            "homeworld": 27
         },
         {
             "id": 51,
@@ -559,7 +609,8 @@
             "skin_color": "green",
             "eye_color": "black",
             "birth_year": "unknown",
-            "gender": "male"
+            "gender": "male",
+            "homeworld": 28
         },
         {
             "id": 52,
@@ -570,7 +621,8 @@
             "skin_color": "brown",
             "eye_color": "brown",
             "birth_year": "unknown",
-            "gender": "male"
+            "gender": "male",
+            "homeworld": 29
         },
         {
             "id": 53,
@@ -581,7 +633,8 @@
             "skin_color": "dark",
             "eye_color": "blue",
             "birth_year": "unknown",
-            "gender": "female"
+            "gender": "female",
+            "homeworld": 30
         },
         {
             "id": 54,
@@ -592,7 +645,8 @@
             "skin_color": "pale",
             "eye_color": "orange",
             "birth_year": "unknown",
-            "gender": "male"
+            "gender": "male",
+            "homeworld": 31
         },
         {
             "id": 55,
@@ -603,7 +657,8 @@
             "skin_color": "white",
             "eye_color": "yellow",
             "birth_year": "unknown",
-            "gender": "male"
+            "gender": "male",
+            "homeworld": 32
         },
         {
             "id": 56,
@@ -614,7 +669,8 @@
             "skin_color": "orange",
             "eye_color": "black",
             "birth_year": "22BBY",
-            "gender": "male"
+            "gender": "male",
+            "homeworld": 33
         },
         {
             "id": 57,
@@ -625,7 +681,8 @@
             "skin_color": "blue",
             "eye_color": "blue",
             "birth_year": "unknown",
-            "gender": "male"
+            "gender": "male",
+            "homeworld": 34
         },
         {
             "id": 58,
@@ -636,7 +693,8 @@
             "skin_color": "dark",
             "eye_color": "brown",
             "birth_year": "unknown",
-            "gender": "male"
+            "gender": "male",
+            "homeworld": 2
         },
         {
             "id": 59,
@@ -647,7 +705,8 @@
             "skin_color": "light",
             "eye_color": "brown",
             "birth_year": "unknown",
-            "gender": "female"
+            "gender": "female",
+            "homeworld": 2
         },
         {
             "id": 60,
@@ -658,7 +717,8 @@
             "skin_color": "fair",
             "eye_color": "blue",
             "birth_year": "82BBY",
-            "gender": "male"
+            "gender": "male",
+            "homeworld": 1
         },
         {
             "id": 61,
@@ -669,7 +729,8 @@
             "skin_color": "green",
             "eye_color": "yellow",
             "birth_year": "unknown",
-            "gender": "male"
+            "gender": "male",
+            "homeworld": 36
         },
         {
             "id": 62,
@@ -680,7 +741,8 @@
             "skin_color": "yellow",
             "eye_color": "blue",
             "birth_year": "58BBY",
-            "gender": "female"
+            "gender": "female",
+            "homeworld": 37
         },
         {
             "id": 63,
@@ -691,7 +753,8 @@
             "skin_color": "yellow",
             "eye_color": "blue",
             "birth_year": "40BBY",
-            "gender": "female"
+            "gender": "female",
+            "homeworld": 37
         },
         {
             "id": 64,
@@ -702,7 +765,8 @@
             "skin_color": "light",
             "eye_color": "brown",
             "birth_year": "unknown",
-            "gender": "female"
+            "gender": "female",
+            "homeworld": 2
         },
         {
             "id": 65,
@@ -713,7 +777,8 @@
             "skin_color": "fair",
             "eye_color": "brown",
             "birth_year": "102BBY",
-            "gender": "male"
+            "gender": "male",
+            "homeworld": 38
         },
         {
             "id": 66,
@@ -724,7 +789,8 @@
             "skin_color": "tan",
             "eye_color": "brown",
             "birth_year": "67BBY",
-            "gender": "male"
+            "gender": "male",
+            "homeworld": 47
         },
         {
             "id": 67,
@@ -735,7 +801,8 @@
             "skin_color": "tan",
             "eye_color": "brown",
             "birth_year": "66BBY",
-            "gender": "male"
+            "gender": "male",
+            "homeworld": 39
         },
         {
             "id": 68,
@@ -746,7 +813,8 @@
             "skin_color": "fair, green",
             "eye_color": "yellow",
             "birth_year": "unknown",
-            "gender": "female"
+            "gender": "female",
+            "homeworld": 40
         },
         {
             "id": 69,
@@ -757,7 +825,8 @@
             "skin_color": "brown",
             "eye_color": "yellow",
             "birth_year": "unknown",
-            "gender": "male"
+            "gender": "male",
+            "homeworld": 41
         },
         {
             "id": 70,
@@ -768,7 +837,8 @@
             "skin_color": "grey",
             "eye_color": "black",
             "birth_year": "unknown",
-            "gender": "male"
+            "gender": "male",
+            "homeworld": 42
         },
         {
             "id": 71,
@@ -779,7 +849,8 @@
             "skin_color": "grey",
             "eye_color": "black",
             "birth_year": "unknown",
-            "gender": "female"
+            "gender": "female",
+            "homeworld": 42
         },
         {
             "id": 72,
@@ -790,7 +861,8 @@
             "skin_color": "fair",
             "eye_color": "blue",
             "birth_year": "unknown",
-            "gender": "female"
+            "gender": "female",
+            "homeworld": 30
         },
         {
             "id": 73,
@@ -801,7 +873,8 @@
             "skin_color": "silver, red",
             "eye_color": "red, blue",
             "birth_year": "unknown",
-            "gender": "female"
+            "gender": "female",
+            "homeworld": 49
         },
         {
             "id": 74,
@@ -812,7 +885,8 @@
             "skin_color": "green, grey",
             "eye_color": "unknown",
             "birth_year": "unknown",
-            "gender": "male"
+            "gender": "male",
+            "homeworld": 43
         },
         {
             "id": 75,
@@ -823,7 +897,8 @@
             "skin_color": "grey",
             "eye_color": "gold",
             "birth_year": "unknown",
-            "gender": "male"
+            "gender": "male",
+            "homeworld": 44
         },
         {
             "id": 76,
@@ -834,7 +909,8 @@
             "skin_color": "red, blue",
             "eye_color": "black",
             "birth_year": "unknown",
-            "gender": "female"
+            "gender": "female",
+            "homeworld": 45
         },
         {
             "id": 77,
@@ -845,7 +921,8 @@
             "skin_color": "brown",
             "eye_color": "green",
             "birth_year": "unknown",
-            "gender": "male"
+            "gender": "male",
+            "homeworld": 46
         },
         {
             "id": 78,
@@ -856,7 +933,8 @@
             "skin_color": "brown",
             "eye_color": "blue",
             "birth_year": "unknown",
-            "gender": "male"
+            "gender": "male",
+            "homeworld": 5
         },
         {
             "id": 79,
@@ -867,7 +945,8 @@
             "skin_color": "light",
             "eye_color": "brown",
             "birth_year": "unknown",
-            "gender": "male"
+            "gender": "male",
+            "homeworld": 47
         },
         {
             "id": 80,
@@ -878,7 +957,8 @@
             "skin_color": "pale",
             "eye_color": "white",
             "birth_year": "unknown",
-            "gender": "female"
+            "gender": "female",
+            "homeworld": 48
         },
         {
             "id": 81,
@@ -889,7 +969,8 @@
             "skin_color": "grey",
             "eye_color": "black",
             "birth_year": "unknown",
-            "gender": "male"
+            "gender": "male",
+            "homeworld": 35
         },
         {
             "id": 82,
@@ -900,7 +981,206 @@
             "skin_color": "fair",
             "eye_color": "hazel",
             "birth_year": "21BBY",
-            "gender": "male"
+            "gender": "male",
+            "homeworld": 6
+        }
+    ],
+    "homeWorlds": [
+        {
+            "id": 1,
+            "worldName": "Tatooine"
+        },
+        {
+            "id": 2,
+            "worldName": "Naboo"
+        },
+        {
+            "id": 3,
+            "worldName": "Stewjon"
+        },
+        {
+            "id": 4,
+            "worldName": "Eriadu"
+        },
+        {
+            "id": 5,
+            "worldName": "Kashyyyk"
+        },
+        {
+            "id": 6,
+            "worldName": "Corellia"
+        },
+        {
+            "id": 7,
+            "worldName": "Rodia"
+        },
+        {
+            "id": 8,
+            "worldName": "Nal Hutta"
+        },
+        {
+            "id": 9,
+            "worldName": "Bestine IV"
+        },
+        {
+            "id": 10,
+            "worldName": "Trandosha"
+        },
+        {
+            "id": 11,
+            "worldName": "Socorro"
+        },
+        {
+            "id": 12,
+            "worldName": "Bespin"
+        },
+        {
+            "id": 13,
+            "worldName": "Mon Cala"
+        },
+        {
+            "id": 14,
+            "worldName": "Chandrila"
+        },
+        {
+            "id": 15,
+            "worldName": "Endor"
+        },
+        {
+            "id": 16,
+            "worldName": "Sullust"
+        },
+        {
+            "id": 17,
+            "worldName": "Cato Neimoidia"
+        },
+        {
+            "id": 18,
+            "worldName": "Toydaria"
+        },
+        {
+            "id": 19,
+            "worldName": "Malastare"
+        },
+        {
+            "id": 20,
+            "worldName": "Dathomir"
+        },
+        {
+            "id": 21,
+            "worldName": "Ryloth"
+        },
+        {
+            "id": 22,
+            "worldName": "Aleen Minor"
+        },
+        {
+            "id": 23,
+            "worldName": "Vulpter"
+        },
+        {
+            "id": 24,
+            "worldName": "Troiken"
+        },
+        {
+            "id": 25,
+            "worldName": "Tund"
+        },
+        {
+            "id": 26,
+            "worldName": "Haruun Kal"
+        },
+        {
+            "id": 27,
+            "worldName": "Cerea"
+        },
+        {
+            "id": 28,
+            "worldName": "Glee Anselm"
+        },
+        {
+            "id": 29,
+            "worldName": "Iridonia"
+        },
+        {
+            "id": 30,
+            "worldName": "Coruscant"
+        },
+        {
+            "id": 31,
+            "worldName": "Iktotch"
+        },
+        {
+            "id": 32,
+            "worldName": "Quermia"
+        },
+        {
+            "id": 33,
+            "worldName": "Dorin"
+        },
+        {
+            "id": 34,
+            "worldName": "Champala"
+        },
+        {
+            "id": 35,
+            "worldName": "Utapau"
+        },
+        {
+            "id": 36,
+            "worldName": "Geonosis"
+        },
+        {
+            "id": 37,
+            "worldName": "Mirial"
+        },
+        {
+            "id": 38,
+            "worldName": "Serenno"
+        },
+        {
+            "id": 39,
+            "worldName": "Concord Dawn"
+        },
+        {
+            "id": 40,
+            "worldName": "Zolan"
+        },
+        {
+            "id": 41,
+            "worldName": "Ojom"
+        },
+        {
+            "id": 42,
+            "worldName": "Kamino"
+        },
+        {
+            "id": 43,
+            "worldName": "Skako"
+        },
+        {
+            "id": 44,
+            "worldName": "Muunilinst"
+        },
+        {
+            "id": 45,
+            "worldName": "Shili"
+        },
+        {
+            "id": 46,
+            "worldName": "Kalee"
+        },
+        {
+            "id": 47,
+            "worldName": "Alderaan"
+        },
+        {
+            "id": 48,
+            "worldName": "Umbara"
+        },
+        {
+            "id": 49,
+            "worldName": "unknown"
         }
     ]
 }
