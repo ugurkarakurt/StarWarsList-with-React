@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import { ListGroup, ListGroupItem } from "reactstrap";
-// import { ListGroup, ListGroupItem, select } from "reactstrap";
+import alertify from "alertifyjs";
+
 
 export default class HomeWorld extends Component {
   state = {
@@ -14,12 +15,16 @@ export default class HomeWorld extends Component {
   getHomeWorlds = () => {
     fetch("http://localhost:3000/homeWorlds")
       .then((response) => response.json())
-      .then((data) => this.setState({ homeWorld: data }));
+      .then((data) => this.setState({ homeWorld: data }))
+      .catch((error) => {
+        alertify.success("Something went wrong.");
+        console.log(error);
+      });
   };
 
   render() {
     return (
-      <div>
+      <div className="home-world">
         <h5>{this.props.info.title}</h5>
         <hr />
         <ListGroup>

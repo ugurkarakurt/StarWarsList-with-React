@@ -1,10 +1,13 @@
 import React, { Component } from "react";
-import "./App.css";
-import Navbar from "./Components/Navbar";
+
+import Navi from "./Components/Navi";
 import HomeWorld from "./Components/HomeWorld";
 import Characters from "./Components/Characters";
+import AddCharacter from "./Components/AddCharacter";
+import NotFound from "./Components/NotFound";
 import { Container, Row, Col } from "reactstrap";
 import { Route, Switch } from "react-router-dom";
+import alertify from "alertifyjs";
 
 export default class App extends Component {
   state = {
@@ -30,7 +33,15 @@ export default class App extends Component {
     }
     fetch(url)
       .then((response) => response.json())
-      .then((data) => this.setState({ characters: data }));
+      .then((data) =>
+        this.setState({
+          characters: data,
+        })
+      )
+      .catch((error) => {
+        alertify.success("Something went wrong.");
+        console.log(error);
+      });
   };
 
   render() {
@@ -43,11 +54,9 @@ export default class App extends Component {
     };
 
     return (
-      <div className="bg-black">
+      <div>
+        <Navi />
         <Container>
-          <Row>
-            <Navbar />
-          </Row>
           <Row>
             <Col xs="3">
               <HomeWorld
@@ -57,11 +66,32 @@ export default class App extends Component {
               />
             </Col>
             <Col xs="9">
-              <Characters
-                currentWorld={this.state.currentWorld}
-                info={charsInfo}
-                characters={this.state.characters}
-              />
+              <Switch>
+                <Route
+                  exact
+                  path="/"
+                  render={(props) => (
+                    <Characters
+                      {...props}
+                      getCharacters={this.getCharacters}
+                      currentWorld={this.state.currentWorld}
+                      info={charsInfo}
+                      characters={this.state.characters}
+                    />
+                  )}
+                />
+                <Route
+                  exact
+                  path="/add"
+                  render={(props) => (
+                    <AddCharacter
+                      {...props}
+                      getCharacters={this.getCharacters}
+                    />
+                  )}
+                />
+                <Route exact path="/" component={NotFound}></Route>
+              </Switch>
             </Col>
           </Row>
         </Container>

@@ -1,0 +1,194 @@
+::-webkit-scrollbar {
+  width: 2px;
+}
+/* Handle */
+::-webkit-scrollbar-thumb {
+  opacity: 0.1;
+
+  background: #d7a809;
+}
+
+%center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+body {
+  font-family: "Dosis", sans-serif;
+  background-color: #eeeeee;
+  color: #393e46;
+}
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: "Days One", sans-serif;
+}
+
+.navigation {
+  background-color: #222831;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.5);
+  height: 5rem;
+  @extend %center;
+  .navbar {
+    background-color: none;
+    a {
+      flex: 1 1;
+      display: flex;
+      align-items: center;
+      color: #6f798a;
+      transition: 0.25s ease-in-out;
+      &:hover {
+        color: #ffffff;
+      }
+      img {
+        height: 4rem;
+      }
+    }
+    .nav {
+      flex: 1 1;
+      .nav-item {
+        display: flex;
+        justify-content: flex-end;
+        width: 100%;
+        input {
+          width: 70%;
+        }
+      }
+    }
+  }
+}
+
+.container {
+  .row {
+    .home-world {
+      margin-top: 5rem;
+      h5 {
+        text-shadow: 0px 5px 5px rgba(150, 150, 150, 1);
+      }
+      .list-group {
+        background-color: none;
+        max-height: 30rem;
+        overflow: scroll;
+        overflow-x: visible;
+        .list-group-item {
+          font-size: 1rem;
+          transition: 0.2s ease-in-out;
+          padding: 0.5rem 1rem;
+          cursor: pointer;
+          border: 0;
+          background: none;
+          &:hover {
+            padding-left: 2rem;
+            border-left: 1px solid #d7a809;
+          }
+        }
+        .active {
+          padding-left: 2rem;
+          background: linear-gradient(141deg, #d7a809 0%, transparent 70%);
+        }
+      }
+    }
+    .section {
+      .title-wrapper {
+        margin: 1rem;
+        position: relative;
+        @extend %center;
+        h3 {
+          text-align: center;
+          text-shadow: 0px 5px 5px rgba(150, 150, 150, 1);
+        }
+        .addButton {
+          width: 100%;
+          height: 100%;
+          position: absolute;
+          display: flex;
+          justify-content: flex-end;
+          align-items: center;
+          padding-right: 1rem;
+          text-decoration: none;
+          i {
+            color: #393e46;
+            font-size: 2rem;
+            transition: 0.1s ease-in-out;
+            &:hover {
+              color: #d7a809;
+              transform: scale(1.1);
+            }
+          }
+        }
+      }
+      main {
+        .card {
+          background-color: transparent;
+          margin-bottom: 1rem;
+          .card-header {
+            background-color: transparent;
+            cursor: pointer;
+            padding: 0;
+            h5 {
+              transition: 0.25s ease-in-out;
+              margin: 0;
+              padding: 1rem;
+            }
+          }
+          .card-body {
+            padding: 0;
+            table {
+              width: 100%;
+              border-collapse: separate;
+              border-spacing: 0 1rem;
+              thead {
+                tr {
+                  th {
+                    color: #393e46;
+                    padding: 0;
+                    text-align: center;
+                    &:not(:last-child) {
+                      border-right: 1px solid rgba(0, 0, 0, 0.1);
+                    }
+                  }
+                }
+              }
+              tbody {
+                tr {
+                  td {
+                    color: #393e46;
+                    padding: 0;
+                    text-align: center;
+                    &:last-child {
+                      i {
+                        cursor: pointer;
+                        transition: .1s ease-in-out;
+                        &:nth-child(3) {
+                          margin-right: 0.5rem;
+                          &:hover {
+                            transform: scale(1.1);
+                            color: steelblue;
+                          }
+                        }
+                        &:nth-child(4) {
+                          &:hover {
+                            transform: scale(1.1);
+                            color: red;
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.titleActive {
+  padding-left: 3rem !important;
+  background: linear-gradient(141deg, #d7a809 0%, transparent 70%);
+}
