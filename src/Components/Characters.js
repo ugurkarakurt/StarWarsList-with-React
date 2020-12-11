@@ -4,77 +4,92 @@ import alertify from "alertifyjs";
 import { Link } from "react-router-dom";
 export default class Characters extends Component {
   state = {
-    updateChar: "",
+    name: "",
+    id: "",
+    birth_year: "",
+    eye_color: "",
+    hair_color: "",
+    skin_color: "",
+    height: "",
+    mass: "",
+    gender: "",
+    element: "",
   };
 
-  deleteOrEditCharacter = (e) => {
-    if (e.target.className === "fas fa-trash") {
-      let url = `http://localhost:3000/results/${e.target.previousElementSibling.previousElementSibling.textContent}`;
-      fetch(url, {
-        method: "DELETE",
-        body: JSON.stringify(this.state),
+  removeCharacter = (id) => {
+    let url = `http://localhost:3000/results/${id}`;
+    fetch(url, {
+      method: "DELETE",
+      body: JSON.stringify(this.state),
+    })
+      .then((reponse) => {
+        alertify.success("Successfully deleted.");
+        this.props.getCharacters();
       })
-        .then((reponse) => {
-          alertify.success("Successfully deleted.");
+      .catch((error) => {
+        alertify.success("Something went wrong.");
+        console.log(error);
+      });
+  };
+
+  updateState = (id, element) => {
+    alertify.warning("Click on the line to edit.");
+    element.contentEditable = true;
+
+    element.addEventListener("focusin", () => {
+      element.style.background =
+        "linear-gradient(141deg, #b9bec5 0%, transparent 80%)";
+      element.style.fontStyle = "italic";
+    });
+    element.addEventListener("focusout", () => {
+      this.setState({
+        name: element.children[7].children[0].innerHTML,
+        id: id,
+        birth_year: element.children[0].innerHTML,
+        eye_color: element.children[1].innerHTML,
+        hair_color: element.children[2].innerHTML,
+        skin_color: element.children[3].innerHTML,
+        height: element.children[4].innerHTML,
+        mass: element.children[5].innerHTML,
+        gender: element.children[6].innerHTML,
+      });
+
+      alertify.success("Saved successfully.");
+
+      element.contentEditable = false;
+      element.style.background = null;
+      element.style.fontStyle = null;
+
+      let url = `http://localhost:3000/results/${id}`;
+      fetch(url, {
+        method: "PUT",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({
+          name: this.state.name,
+          birth_year: this.state.birth_year,
+          eye_color: this.state.eye_color,
+          hair_color: this.state.hair_color,
+          skin_color: this.state.skin_color,
+          height: this.state.height,
+          mass: this.state.mass,
+          gender: this.state.gender,
+        }),
+      })
+        .then((response) => response.json())
+        .then((data) => {
           this.props.getCharacters();
+          alertify.success("Saved successfully.");
         })
         .catch((error) => {
           alertify.success("Something went wrong.");
           console.log(error);
         });
-    } else if (e.target.className === "fas fa-edit") {
-      alertify.warning("Click on the line to edit.");
-      e.target.parentElement.parentElement.contentEditable = true;
-      e.target.parentElement.contentEditable = false;
-      this.setState({
-        updateChar: e.target.parentElement.parentElement.children,
-      });
-
-      e.target.parentElement.parentElement.addEventListener("focusin", () => {
-        e.target.parentElement.parentElement.style.background =
-          "linear-gradient(141deg, #ffd369 0%, transparent 80%)";
-        e.target.parentElement.parentElement.style.fontStyle = "italic";
-      });
-
-      e.target.parentElement.parentElement.addEventListener("focusout", () => {
-        alertify.success("Saved successfully.");
-        let url = `http://localhost:3000/results/${e.target.previousElementSibling.textContent}`;
-
-        console.log(this.state.updateChar);
-        fetch(url, {
-          method: "PUT",
-          headers: {
-            "Content-Type": "application/json",
-          },
-          body: JSON.stringify({
-            name: this.state.updateChar[7].children[0].innerHTML,
-            birth_year: this.state.updateChar[0].innerHTML,
-            eye_color: this.state.updateChar[1].innerHTML,
-            hair_color: this.state.updateChar[2].innerHTML,
-            skin_color: this.state.updateChar[3].innerHTML,
-            height: this.state.updateChar[4].innerHTML,
-            mass: this.state.updateChar[5].innerHTML,
-            gender: this.state.updateChar[6].innerHTML,
-          }),
-        })
-          .then((response) => response.json())
-          .then((data) => {
-            e.target.parentElement.parentElement.contentEditable = false;
-            console.log(data);
-          })
-          .catch((error) => {
-            alertify.success("Something went wrong.");
-            console.log(error);
-          });
-
-        e.target.parentElement.parentElement.style.background = null;
-        e.target.parentElement.parentElement.style.fontStyle = null;
-      });
-    }
+    });
   };
 
   render() {
-    console.log(this.props);
     return (
       <div className="section">
         <div className="title-wrapper">
@@ -89,7 +104,8 @@ export default class Characters extends Component {
           {this.props.characters.map((character) => {
             return (
               <CharTable
-                deleteOrEditCharacter={this.deleteOrEditCharacter}
+                removeCharacter={this.removeCharacter}
+                updateState={this.updateState}
                 key={character.id}
                 name={character.name}
                 id={character.id}

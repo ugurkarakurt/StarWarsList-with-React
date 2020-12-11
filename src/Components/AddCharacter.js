@@ -6,8 +6,15 @@ import alertify from "alertifyjs";
 export default class AddCharacter extends Component {
   state = {
     name: "",
+    birth_year: "",
     eye_color: "",
+    skin_color: "",
+    hair_color: "",
     height: "",
+    mass: "",
+    gender: "",
+    homeworld: "",
+    homeWorlds: [],
   };
 
   addCharacter = (e) => {
@@ -17,10 +24,17 @@ export default class AddCharacter extends Component {
 
     if (
       (this.state.name === "",
+      this.state.birth_year === "",
       this.state.eye_color === "",
-      this.state.height === "")
+      this.state.skin_color === "",
+      this.state.hair_color === "",
+      this.state.height === "",
+      this.state.mass === "",
+      this.state.gender === "",
+      this.state.height === "",
+      this.state.homeworld === "")
     ) {
-      alert();
+      alertify.error("Fill in all inputs.");
     } else {
       fetch(url, {
         method: "POST",
@@ -32,7 +46,7 @@ export default class AddCharacter extends Component {
         .then((response) => response.json())
         .then((data) => this.props.getCharacters())
         .catch((error) => {
-          alertify.success("Something went wrong.");
+          alertify.success("Saved Successfully.");
           console.log(error);
         });
     }
@@ -44,12 +58,30 @@ export default class AddCharacter extends Component {
     });
   };
 
+  componentDidMount = () => {
+    this.addHomeWorldSelect();
+  };
+
+  addHomeWorldSelect = () => {
+    fetch("http://localhost:3000/homeWorlds")
+      .then((response) => response.json())
+      .then((data) =>
+        this.setState({
+          homeWorlds: data,
+        })
+      );
+  };
+
   render() {
     return (
-      <div>
-        <Link to="/">
-          <button className="back">Back</button>
-        </Link>
+      <div className="addCharacter">
+        <div className="backBTN">
+          <Link to="/">
+            <button className="btn">
+              <i className="fas fa-arrow-left"></i>
+            </button>
+          </Link>
+        </div>
         <Form>
           <FormGroup>
             <Label for="name">Name</Label>
@@ -133,8 +165,27 @@ export default class AddCharacter extends Component {
               onChange={this.onChangeInput}
             />
           </FormGroup>
-
-          <Button type="submit" onClick={this.addCharacter}></Button>
+          <FormGroup>
+            <Label for="exampleSelect">Home World</Label>
+            <Input
+              type="select"
+              name="homeworld"
+              placeholder="Enter a Home World"
+              value={this.state.homeworld}
+              onChange={this.onChangeInput}
+            >
+              {this.state.homeWorlds.map((homeWorld) => (
+                <option key={homeWorld.id} value={homeWorld.id}>
+                  {homeWorld.worldName}
+                </option>
+              ))}
+            </Input>
+          </FormGroup>
+          <div className="button-wrapper">
+            <button className="btn" type="submit" onClick={this.addCharacter}>
+              Add a new character
+            </button>
+          </div>
         </Form>
       </div>
     );

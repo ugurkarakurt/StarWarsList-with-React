@@ -33,9 +33,8 @@ export default class CharTable extends Component {
       skin_color,
       height,
       mass,
-      homeworld,
-      currentWorld,
-      deleteOrEditCharacter,
+      removeCharacter,
+      updateState,
     } = this.props;
 
     return (
@@ -64,7 +63,7 @@ export default class CharTable extends Component {
                 </tr>
               </thead>
               <tbody>
-                <tr>
+                <tr className="editableRow">
                   <td>{birth_year}</td>
                   <td>{eye_color}</td>
                   <td>{hair_color}</td>
@@ -74,13 +73,16 @@ export default class CharTable extends Component {
                   <td>{gender}</td>
                   <td>
                     <i style={{ display: "none" }}>{name}</i>
-                    <i style={{ display: "none" }}>{id}</i>
                     <i
-                      onClick={deleteOrEditCharacter}
+                      onClick={(e) => {
+                        updateState(id, e.target.parentElement.parentElement);
+                      }}
                       className="fas fa-edit"
                     ></i>
                     <i
-                      onClick={deleteOrEditCharacter}
+                      onClick={() => {
+                        removeCharacter(id);
+                      }}
                       className="fas fa-trash"
                     ></i>
                   </td>
