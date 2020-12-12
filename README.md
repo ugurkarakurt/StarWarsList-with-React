@@ -2,7 +2,7 @@
 
 Contact list created with a **Fake REST API**
 
-- React
+- [React](https://reactjs.org/)
 - [Swapi](https://swapi.dev/).
 - [JSONPlaceholder - Live running version](https://jsonplaceholder.typicode.com/).
 
