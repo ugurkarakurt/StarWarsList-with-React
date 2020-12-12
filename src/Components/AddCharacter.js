@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { Form, FormGroup, Label, Input, Button } from "reactstrap";
+import { Form, FormGroup, Label, Input } from "reactstrap";
 import { Link } from "react-router-dom";
 import alertify from "alertifyjs";
 
@@ -44,9 +44,23 @@ export default class AddCharacter extends Component {
         body: JSON.stringify(this.state),
       })
         .then((response) => response.json())
-        .then((data) => this.props.getCharacters())
-        .catch((error) => {
+        .then((data) => {
+          this.props.getCharacters();
+          this.setState({
+            name: "",
+            birth_year: "",
+            eye_color: "",
+            skin_color: "",
+            hair_color: "",
+            height: "",
+            mass: "",
+            gender: "",
+            homeworld: "",
+          });
           alertify.success("Saved Successfully.");
+        })
+        .catch((error) => {
+          alertify.success("Something went wrong.");
           console.log(error);
         });
     }
@@ -84,8 +98,11 @@ export default class AddCharacter extends Component {
         </div>
         <Form>
           <FormGroup>
-            <Label for="name">Name</Label>
+            <Label className="animate__animated animate__fadeInLeft" for="name">
+              Name
+            </Label>
             <Input
+              className="animate__animated animate__flipInX"
               type="text"
               name="name"
               placeholder="Enter a name"
@@ -94,8 +111,14 @@ export default class AddCharacter extends Component {
             />
           </FormGroup>
           <FormGroup>
-            <Label for="height">Birth Year</Label>
+            <Label
+              className="animate__animated animate__fadeInLeft"
+              for="height"
+            >
+              Birth Year
+            </Label>
             <Input
+              className="animate__animated animate__flipInX"
               type="text"
               name="birth_year"
               placeholder="Enter a Birth Year"
@@ -104,8 +127,14 @@ export default class AddCharacter extends Component {
             />
           </FormGroup>
           <FormGroup>
-            <Label for="eye_color">Eye Color</Label>
+            <Label
+              className="animate__animated animate__fadeInLeft"
+              for="eye_color"
+            >
+              Eye Color
+            </Label>
             <Input
+              className="animate__animated animate__flipInX"
               type="text"
               name="eye_color"
               placeholder="Enter a eye color"
@@ -115,8 +144,14 @@ export default class AddCharacter extends Component {
           </FormGroup>
 
           <FormGroup>
-            <Label for="height">Hair Color</Label>
+            <Label
+              className="animate__animated animate__fadeInLeft"
+              for="height"
+            >
+              Hair Color
+            </Label>
             <Input
+              className="animate__animated animate__flipInX"
               type="text"
               name="hair_color"
               placeholder="Enter a Hair Color"
@@ -125,8 +160,14 @@ export default class AddCharacter extends Component {
             />
           </FormGroup>
           <FormGroup>
-            <Label for="height">Skin Color</Label>
+            <Label
+              className="animate__animated animate__fadeInLeft"
+              for="height"
+            >
+              Skin Color
+            </Label>
             <Input
+              className="animate__animated animate__flipInX"
               type="text"
               name="skin_color"
               placeholder="Enter a Skin Color"
@@ -135,9 +176,15 @@ export default class AddCharacter extends Component {
             />
           </FormGroup>
           <FormGroup>
-            <Label for="height">Height</Label>
+            <Label
+              className="animate__animated animate__fadeInLeft"
+              for="height"
+            >
+              Height
+            </Label>
             <Input
-              type="text"
+              className="animate__animated animate__flipInX"
+              type="number"
               name="height"
               placeholder="Enter a height"
               value={this.state.height}
@@ -146,9 +193,15 @@ export default class AddCharacter extends Component {
           </FormGroup>
 
           <FormGroup>
-            <Label for="height">Mass</Label>
+            <Label
+              className="animate__animated animate__fadeInLeft"
+              for="height"
+            >
+              Mass
+            </Label>
             <Input
-              type="text"
+              className="animate__animated animate__flipInX"
+              type="number"
               name="mass"
               placeholder="Enter a Mass"
               value={this.state.mass}
@@ -156,8 +209,14 @@ export default class AddCharacter extends Component {
             />
           </FormGroup>
           <FormGroup>
-            <Label for="height">Gender</Label>
+            <Label
+              className="animate__animated animate__fadeInLeft"
+              for="height"
+            >
+              Gender
+            </Label>
             <Input
+              className="animate__animated animate__flipInX"
               type="text"
               name="gender"
               placeholder="Enter a Gender"
@@ -166,14 +225,21 @@ export default class AddCharacter extends Component {
             />
           </FormGroup>
           <FormGroup>
-            <Label for="exampleSelect">Home World</Label>
+            <Label
+              className="animate__animated animate__fadeInLeft"
+              for="exampleSelect"
+            >
+              Home World
+            </Label>
             <Input
+              className="animate__animated animate__flipInX"
               type="select"
               name="homeworld"
               placeholder="Enter a Home World"
               value={this.state.homeworld}
               onChange={this.onChangeInput}
             >
+              <option value="-">-</option>
               {this.state.homeWorlds.map((homeWorld) => (
                 <option key={homeWorld.id} value={homeWorld.id}>
                   {homeWorld.worldName}

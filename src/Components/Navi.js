@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { Navbar, NavbarBrand, Nav, NavItem } from "reactstrap";
+import { Navbar, NavbarBrand } from "reactstrap";
 
 export default class Navi extends Component {
   render() {
@@ -12,11 +12,6 @@ export default class Navi extends Component {
               alt=""
             />
           </NavbarBrand>
-          <Nav>
-            <NavItem>
-              <input className="form-control" type="text" placeholder="Search a character"/>
-            </NavItem>
-          </Nav>
         </Navbar>
       </div>
     );

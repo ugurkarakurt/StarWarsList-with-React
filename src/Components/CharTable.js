@@ -38,7 +38,7 @@ export default class CharTable extends Component {
     } = this.props;
 
     return (
-      <div className="card">
+      <div className="card animate__animated animate__bounceInUp ">
         <div onClick={this.showInfo} className="card-header">
           <h5>
             {name} &nbsp;

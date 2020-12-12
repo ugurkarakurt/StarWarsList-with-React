@@ -73,6 +73,7 @@ export default class App extends Component {
                   render={(props) => (
                     <Characters
                       {...props}
+                      search={this.state.search}
                       getCharacters={this.getCharacters}
                       currentWorld={this.state.currentWorld}
                       info={charsInfo}
