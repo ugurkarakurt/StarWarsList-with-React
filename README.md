@@ -17,7 +17,9 @@ npm install
 After the installations are successful, we need to run Json-server
 
 ```
-json-server --watch api/db.json  > // Since it runs on" json server and react" 3000 port, we need to start json server first.
+json-server --watch api/db.json
+> Pardon my French
+> // Since it runs on" json server and react" 3000 port, we need to start json server first.
 ```
 
 ###### Now we are ready to start the project
