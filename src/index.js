@@ -5,7 +5,7 @@ import reportWebVitals from './reportWebVitals';
 import 'alertifyjs/build/css/alertify.min.css'
 import "animate.css/animate.min.css";
 import {BrowserRouter} from 'react-router-dom'
-import "./App.css";
+import "../src/assets/css/App.css";
 
 
 ReactDOM.render(
