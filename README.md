@@ -1,70 +1,45 @@
-# Getting Started with Create React App
+# Star Wars List with React (with swapi.dev & json-server)
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Contact list created with a **Fake REST API**
 
-## Available Scripts
+- [React](https://reactjs.org/)
+- [Swapi](https://swapi.dev/).
+- [JSONPlaceholder - Live running version](https://jsonplaceholder.typicode.com/).
 
-In the project directory, you can run:
+# Getting started
 
-### `npm start`
+Install Packages
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+```
+npm install
+```
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+After the installations are successful, we need to run Json-server
 
-### `npm test`
+```
+json-server --watch api/db.json
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+// Since it runs on" json server and react" 3000 port, we need to start json server first.
+```
 
-### `npm run build`
+###### Now we are ready to start the project
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+```
+npm run start
+// Since the port is full, we should say "yes" to the question it will ask to open on port 3001.
+```
+![Star Wars](https://www.pngkit.com/png/full/432-4327979_disfruta-de-los-20-renders-de-la-pelicula.png)
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+# What is the Star wars List
 
-### `npm run eject`
+Contact list created with fake api. We can also add our own heroes to our list.
+We can delete characters we don't like (Darth Sidious) :unamused: , we can update them.
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
 
-## Learn More
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
-To learn React, check out the [React documentation](https://reactjs.org/).
 
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
