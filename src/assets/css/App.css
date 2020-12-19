@@ -30,7 +30,7 @@ h5 {
   .navigation .navbar {
     background-color: none; }
     .navigation .navbar a {
-      flex: 1 1;
+      cursor: pointer;
       display: flex;
       align-items: center;
       color: #6f798a;
@@ -39,14 +39,6 @@ h5 {
         color: #ffffff; }
       .navigation .navbar a img {
         height: 4rem; }
-    .navigation .navbar .nav {
-      flex: 1 1; }
-      .navigation .navbar .nav .nav-item {
-        display: flex;
-        justify-content: flex-end;
-        width: 100%; }
-        .navigation .navbar .nav .nav-item input {
-          width: 70%; }
 
 .container .row .home-world {
   margin-top: 5rem; }

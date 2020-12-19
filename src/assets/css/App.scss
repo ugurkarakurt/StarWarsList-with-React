@@ -35,7 +35,7 @@ h5 {
   .navbar {
     background-color: none;
     a {
-      flex: 1 1;
+      cursor: pointer;
       display: flex;
       align-items: center;
       color: #6f798a;
@@ -45,17 +45,6 @@ h5 {
       }
       img {
         height: 4rem;
-      }
-    }
-    .nav {
-      flex: 1 1;
-      .nav-item {
-        display: flex;
-        justify-content: flex-end;
-        width: 100%;
-        input {
-          width: 70%;
-        }
       }
     }
   }

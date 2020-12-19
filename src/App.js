@@ -37,7 +37,7 @@ const App = () => {
 
   return (
     <div>
-      <Navi />
+      <Navi changeWorld={changeWorld} />
       <Container>
         <Row>
           <Col xs="3">

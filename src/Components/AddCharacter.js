@@ -98,11 +98,10 @@ export default class AddCharacter extends Component {
         </div>
         <Form>
           <FormGroup>
-            <Label className="animate__animated animate__fadeInLeft" for="name">
+            <Label className="animate__animated animate__bounceIn" for="name">
               Name
             </Label>
             <Input
-              className="animate__animated animate__flipInX"
               type="text"
               name="name"
               placeholder="Enter a name"
@@ -111,14 +110,10 @@ export default class AddCharacter extends Component {
             />
           </FormGroup>
           <FormGroup>
-            <Label
-              className="animate__animated animate__fadeInLeft"
-              for="height"
-            >
+            <Label className="animate__animated animate__bounceIn" for="height">
               Birth Year
             </Label>
             <Input
-              className="animate__animated animate__flipInX"
               type="text"
               name="birth_year"
               placeholder="Enter a Birth Year"
@@ -128,13 +123,12 @@ export default class AddCharacter extends Component {
           </FormGroup>
           <FormGroup>
             <Label
-              className="animate__animated animate__fadeInLeft"
+              className="animate__animated animate__bounceIn"
               for="eye_color"
             >
               Eye Color
             </Label>
             <Input
-              className="animate__animated animate__flipInX"
               type="text"
               name="eye_color"
               placeholder="Enter a eye color"
@@ -144,14 +138,10 @@ export default class AddCharacter extends Component {
           </FormGroup>
 
           <FormGroup>
-            <Label
-              className="animate__animated animate__fadeInLeft"
-              for="height"
-            >
+            <Label className="animate__animated animate__bounceIn" for="height">
               Hair Color
             </Label>
             <Input
-              className="animate__animated animate__flipInX"
               type="text"
               name="hair_color"
               placeholder="Enter a Hair Color"
@@ -160,14 +150,10 @@ export default class AddCharacter extends Component {
             />
           </FormGroup>
           <FormGroup>
-            <Label
-              className="animate__animated animate__fadeInLeft"
-              for="height"
-            >
+            <Label className="animate__animated animate__bounceIn" for="height">
               Skin Color
             </Label>
             <Input
-              className="animate__animated animate__flipInX"
               type="text"
               name="skin_color"
               placeholder="Enter a Skin Color"
@@ -176,14 +162,10 @@ export default class AddCharacter extends Component {
             />
           </FormGroup>
           <FormGroup>
-            <Label
-              className="animate__animated animate__fadeInLeft"
-              for="height"
-            >
+            <Label className="animate__animated animate__bounceIn" for="height">
               Height
             </Label>
             <Input
-              className="animate__animated animate__flipInX"
               type="number"
               name="height"
               placeholder="Enter a height"
@@ -193,14 +175,10 @@ export default class AddCharacter extends Component {
           </FormGroup>
 
           <FormGroup>
-            <Label
-              className="animate__animated animate__fadeInLeft"
-              for="height"
-            >
+            <Label className="animate__animated animate__bounceIn" for="height">
               Mass
             </Label>
             <Input
-              className="animate__animated animate__flipInX"
               type="number"
               name="mass"
               placeholder="Enter a Mass"
@@ -209,14 +187,10 @@ export default class AddCharacter extends Component {
             />
           </FormGroup>
           <FormGroup>
-            <Label
-              className="animate__animated animate__fadeInLeft"
-              for="height"
-            >
+            <Label className="animate__animated animate__bounceIn" for="height">
               Gender
             </Label>
             <Input
-              className="animate__animated animate__flipInX"
               type="text"
               name="gender"
               placeholder="Enter a Gender"
@@ -226,13 +200,12 @@ export default class AddCharacter extends Component {
           </FormGroup>
           <FormGroup>
             <Label
-              className="animate__animated animate__fadeInLeft"
+              className="animate__animated animate__bounceIn"
               for="exampleSelect"
             >
               Home World
             </Label>
             <Input
-              className="animate__animated animate__flipInX"
               type="select"
               name="homeworld"
               placeholder="Enter a Home World"
