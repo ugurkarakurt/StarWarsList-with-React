@@ -1,15 +1,14 @@
 import React, { Component } from "react";
 
-import Characters from "./Components/Characters";
-import AddCharacter from "./Components/AddCharacter";
+import List from "./Containers/List";
+import Add from "./Containers/Add";
 import NotFound from "./Components/NotFound";
 import { Route, Switch } from "react-router-dom";
 
 export default class Routes extends Component {
   render() {
-    const { characters, currentWorld, getCharacters, info } = this.props;
+    const { characters, currentWorld, getCharacters } = this.props;
 
-    console.log(this.props);
     return (
       <div>
         <Switch>
@@ -17,11 +16,10 @@ export default class Routes extends Component {
             exact
             path="/"
             render={(props) => (
-              <Characters
+              <List
                 {...props}
                 getCharacters={getCharacters}
                 currentWorld={currentWorld}
-                info={info}
                 characters={characters}
               />
             )}
@@ -30,7 +28,7 @@ export default class Routes extends Component {
             exact
             path="/add"
             render={(props) => (
-              <AddCharacter {...props} getCharacters={getCharacters} />
+              <Add {...props} getCharacters={getCharacters} />
             )}
           />
           <Route exact path="/" component={NotFound}></Route>

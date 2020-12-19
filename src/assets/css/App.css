@@ -115,20 +115,21 @@ h5 {
         .container .row .section main .card .card-body table thead tr th:not(:last-child) {
           border-right: 1px solid rgba(0, 0, 0, 0.1); }
       .container .row .section main .card .card-body table tbody tr td {
+        border-radius: 5px;
         color: #393e46;
         padding: 0;
         text-align: center; }
         .container .row .section main .card .card-body table tbody tr td:last-child i {
           cursor: pointer;
           transition: 0.1s ease-in-out; }
-          .container .row .section main .card .card-body table tbody tr td:last-child i:nth-child(2) {
-            margin-right: 0.5rem; }
-            .container .row .section main .card .card-body table tbody tr td:last-child i:nth-child(2):hover {
-              transform: scale(1.1);
-              color: steelblue; }
-          .container .row .section main .card .card-body table tbody tr td:last-child i:nth-child(3):hover {
+        .container .row .section main .card .card-body table tbody tr td:last-child .fa-edit {
+          margin-right: 0.5rem; }
+          .container .row .section main .card .card-body table tbody tr td:last-child .fa-edit:hover {
             transform: scale(1.1);
-            color: red; }
+            color: steelblue; }
+        .container .row .section main .card .card-body table tbody tr td:last-child .fa-trash:hover {
+          transform: scale(1.1);
+          color: red; }
 .container .row .addCharacter {
   margin-top: 1rem; }
   .container .row .addCharacter .backBTN {

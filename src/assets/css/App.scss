@@ -155,6 +155,7 @@ h5 {
               tbody {
                 tr {
                   td {
+                    border-radius: 5px;
                     color: #393e46;
                     padding: 0;
                     text-align: center;
@@ -162,18 +163,18 @@ h5 {
                       i {
                         cursor: pointer;
                         transition: 0.1s ease-in-out;
-                        &:nth-child(2) {
-                          margin-right: 0.5rem;
-                          &:hover {
-                            transform: scale(1.1);
-                            color: steelblue;
-                          }
+                      }
+                      .fa-edit {
+                        margin-right: 0.5rem;
+                        &:hover {
+                          transform: scale(1.1);
+                          color: steelblue;
                         }
-                        &:nth-child(3) {
-                          &:hover {
-                            transform: scale(1.1);
-                            color: red;
-                          }
+                      }
+                      .fa-trash {
+                        &:hover {
+                          transform: scale(1.1);
+                          color: red;
                         }
                       }
                     }

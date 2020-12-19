@@ -7,10 +7,14 @@ import "animate.css/animate.min.css";
 import {BrowserRouter} from 'react-router-dom'
 import "../src/assets/css/App.css";
 
+import Store from "./Store"
+
 
 ReactDOM.render(
   <BrowserRouter>
+    <Store>
     <App />
+    </Store>
   </BrowserRouter>,
   document.getElementById('root')
 );

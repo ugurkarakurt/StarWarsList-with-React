@@ -1,44 +1,41 @@
-import React, { Component } from "react";
+import React, { useState, useEffect } from "react";
 import { ListGroup, ListGroupItem } from "reactstrap";
 import alertify from "alertifyjs";
 
+export default function HomeWorld(props) {
+  const [homeWorld, setHomeWorld] = useState([]);
 
-export default class HomeWorld extends Component {
-  state = {
-    homeWorld: [],
-  };
+  useEffect(() => {
+    getHomeWorlds();
+  }, []);
 
-  componentDidMount() {
-    this.getHomeWorlds();
-  }
-
-  getHomeWorlds = () => {
+  const getHomeWorlds = () => {
     fetch("http://localhost:3000/homeWorlds")
       .then((response) => response.json())
-      .then((data) => this.setState({ homeWorld: data }))
+      .then((data) => {
+        setHomeWorld(data);
+      })
       .catch((error) => {
         alertify.success("Something went wrong.");
         console.log(error);
       });
   };
 
-  render() {
-    return (
-      <div className="home-world">
-        <h5>{this.props.info.title}</h5>
-        <hr />
-        <ListGroup>
-          {this.state.homeWorld.map((world) => (
-            <ListGroupItem
-              active={world.worldName === this.props.currentWorld}
-              onClick={() => this.props.changeWorld(world)}
-              key={world.id}
-            >
-              {world.worldName}
-            </ListGroupItem>
-          ))}
-        </ListGroup>
-      </div>
-    );
-  }
+  return (
+    <div className="home-world">
+      <h5>Home Worlds</h5>
+      <hr />
+      <ListGroup>
+        {homeWorld.map((world) => (
+          <ListGroupItem
+            active={world.worldName === props.currentWorld}
+            onClick={() => props.changeWorld(world)}
+            key={world.id}
+          >
+            {world.worldName}
+          </ListGroupItem>
+        ))}
+      </ListGroup>
+    </div>
+  );
 }
