@@ -7,8 +7,7 @@ import { Route, Switch } from "react-router-dom";
 
 export default class Routes extends Component {
   render() {
-    const { characters, currentWorld, getCharacters } = this.props;
-
+    const { getCharacters } = this.props;
     return (
       <div>
         <Switch>
@@ -16,20 +15,13 @@ export default class Routes extends Component {
             exact
             path="/"
             render={(props) => (
-              <List
-                {...props}
-                getCharacters={getCharacters}
-                currentWorld={currentWorld}
-                characters={characters}
-              />
+              <List {...props} getCharacters={getCharacters} />
             )}
           />
           <Route
             exact
             path="/add"
-            render={(props) => (
-              <Add {...props} getCharacters={getCharacters} />
-            )}
+            render={(props) => <Add {...props} getCharacters={getCharacters} />}
           />
           <Route exact path="/" component={NotFound}></Route>
         </Switch>

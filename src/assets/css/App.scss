@@ -62,6 +62,10 @@ h5 {
         max-height: 30rem;
         overflow: scroll;
         overflow-x: visible;
+        a {
+          color: #222831;
+          text-decoration: none;
+        }
         .list-group-item {
           font-size: 1rem;
           transition: 0.2s ease-in-out;

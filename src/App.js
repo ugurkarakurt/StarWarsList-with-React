@@ -1,4 +1,4 @@
-import React, { useContext, useEffect } from "react";
+import React, { useState, useContext, useEffect } from "react";
 import Navi from "./Components/Navi";
 import HomeWorld from "./Components/HomeWorld";
 import Routes from "./Routes";
@@ -16,7 +16,6 @@ const App = () => {
     setCurrentWorld(worldName.worldName);
     getCharacters(worldName.id);
   };
-
   const getCharacters = (worldId) => {
     let url = "http://localhost:3000/results";
     if (worldId) {

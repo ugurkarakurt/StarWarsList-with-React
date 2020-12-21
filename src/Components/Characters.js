@@ -1,14 +1,13 @@
 import React, { useContext } from "react";
 import CharTable from "./CharTable";
-import alertify from "alertifyjs";
 import { Link } from "react-router-dom";
 
 import { currentWorldContext } from "../Store";
 import { charactersContext } from "../Store";
 
 export default function Characters(props) {
-  const [currentWorld, setCurrentWorld] = useContext(currentWorldContext);
-  const [characters, setCharacters] = useContext(charactersContext);
+  const [currentWorld] = useContext(currentWorldContext);
+  const [characters] = useContext(charactersContext);
 
   return (
     <div className="section">
@@ -20,7 +19,11 @@ export default function Characters(props) {
       </div>
       <main>
         {characters.map((character) => (
-          <CharTable getCharacters= {props.getCharacters} key={character.id} character={character} />
+          <CharTable
+            key={character.id}
+            getCharacters={props.getCharacters}
+            character={character}
+          />
         ))}
       </main>
     </div>

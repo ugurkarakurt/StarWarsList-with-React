@@ -6,9 +6,7 @@ export default class List extends Component {
     const { getCharacters } = this.props;
     return (
       <div>
-       <Characters
-          getCharacters={getCharacters}
-        />
+        <Characters getCharacters={getCharacters} />
       </div>
     );
   }

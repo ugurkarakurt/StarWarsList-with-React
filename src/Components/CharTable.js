@@ -1,5 +1,5 @@
 //Necessary import operations
-import React, { useState, useContext } from "react";
+import React, { useState } from "react";
 import { Table } from "reactstrap";
 import alertify from "alertifyjs";
 import posed from "react-pose";
@@ -45,14 +45,14 @@ const Chartable = (props) => {
         e.target.style.borderBottom = "1px solid #d7a809 ";
         e.target.style.background = "transparent";
         e.target.style.fontStyle = "italic";
-        setUpdateRow(1);
       });
-
+      setUpdateRow(1);
       if (e.target.className === "action") {
         e.target.contentEditable = false;
       }
     }
   };
+  
   //The function that sends the update request after editing
   const updateState = (char, element) => {
     let url = `http://localhost:3000/results/${char.id}`;
@@ -63,7 +63,6 @@ const Chartable = (props) => {
       },
       body: JSON.stringify({
         name: element.children[7].children[1].innerHTML,
-        id: char.id,
         birth_year: element.children[0].innerHTML,
         eye_color: element.children[1].innerHTML,
         hair_color: element.children[2].innerHTML,
@@ -71,11 +70,12 @@ const Chartable = (props) => {
         height: element.children[4].innerHTML,
         mass: element.children[5].innerHTML,
         gender: element.children[6].innerHTML,
+        homeworld: char.homeworld,
       }),
     })
       .then((response) => response.json())
       .then((data) => {
-        props.getCharacters();
+        props.getCharacters(char.homeworld);
         setUpdateRow(0);
         alertify.success("Saved successfully.");
       })
