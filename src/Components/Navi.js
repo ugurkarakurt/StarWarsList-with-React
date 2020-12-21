@@ -6,7 +6,7 @@ export default class Navi extends Component {
     return (
       <div className="navigation">
         <Navbar className="container">
-          <NavbarBrand href="/" onClick= {this.props.changeWorld}>
+          <NavbarBrand>
             <img
               src="https://logos-download.com/wp-content/uploads/2016/09/Star_Wars_logo-1.png"
               alt=""

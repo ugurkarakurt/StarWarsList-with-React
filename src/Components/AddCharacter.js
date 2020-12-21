@@ -77,7 +77,6 @@ export default function AddCharacter(props) {
       ...state,
       [e.target.name]: e.target.value,
     });
-    console.log(state);
   };
 
   return (

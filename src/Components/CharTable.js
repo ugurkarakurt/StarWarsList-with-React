@@ -52,7 +52,7 @@ const Chartable = (props) => {
       }
     }
   };
-  
+
   //The function that sends the update request after editing
   const updateState = (char, element) => {
     let url = `http://localhost:3000/results/${char.id}`;
