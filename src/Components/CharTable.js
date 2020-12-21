@@ -86,13 +86,13 @@ const Chartable = (props) => {
   };
 
   //The function that sends the request to delete
-  const removeCharacter = (id) => {
-    let url = `http://localhost:3000/results/${id}`;
+  const removeCharacter = (character) => {
+    let url = `http://localhost:3000/results/${character.id}`;
     fetch(url, {
       method: "DELETE",
     })
       .then((reponse) => {
-        props.getCharacters();
+        props.getCharacters(character.homeworld);
         alertify.success("Successfully deleted.").dismissOthers();
       })
       .catch((error) => {
@@ -102,7 +102,7 @@ const Chartable = (props) => {
   };
 
   return (
-    <div className="card animate__animated animate__bounceInUp ">
+    <div className="card animate__animated animate__slideInUp">
       <div onClick={showInfo} className="card-header">
         <h5>
           {props.character.name} &nbsp;
@@ -145,12 +145,12 @@ const Chartable = (props) => {
                           e.target.parentElement.parentElement
                         );
                       }}
-                      className="fas fa-edit animate__animated animate__bounceIn"
+                      className="fas fa-journal-whills"
                     ></i>
                   ) : null}
                   <i
                     onClick={() => {
-                      removeCharacter(props.character.id);
+                      removeCharacter(props.character);
                     }}
                     className="fas fa-trash"
                   ></i>

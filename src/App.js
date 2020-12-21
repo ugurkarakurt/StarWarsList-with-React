@@ -1,4 +1,4 @@
-import React, { useState, useContext, useEffect } from "react";
+import React, { useContext, useEffect } from "react";
 import Navi from "./Components/Navi";
 import HomeWorld from "./Components/HomeWorld";
 import Routes from "./Routes";

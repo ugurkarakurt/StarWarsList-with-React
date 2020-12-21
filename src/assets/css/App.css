@@ -1,3 +1,4 @@
+@import url("./LightSabersEffect.css");
 ::-webkit-scrollbar {
   width: 2px; }
 
@@ -38,6 +39,7 @@ h5 {
       .navigation .navbar a:hover {
         color: #ffffff; }
       .navigation .navbar a img {
+        animation: dropLightSaberYellow 2s linear infinite;
         height: 4rem; }
 
 .container .row .home-world {
@@ -65,66 +67,84 @@ h5 {
     .container .row .home-world .list-group .active {
       padding-left: 2rem;
       background: linear-gradient(141deg, #d7a809 0%, transparent 70%); }
-.container .row .section .title-wrapper {
-  margin: 1rem 0;
-  position: relative; }
-  .container .row .section .title-wrapper h3 {
-    width: 100%;
-    text-align: center;
-    text-shadow: 0px 5px 5px #969696; }
-  .container .row .section .title-wrapper .addButton {
-    position: absolute;
-    right: 0;
-    text-decoration: none; }
-    .container .row .section .title-wrapper .addButton i {
-      color: #393e46;
-      font-size: 2.5rem;
-      transition: 0.1s ease-in-out; }
-      .container .row .section .title-wrapper .addButton i:hover {
-        color: #d7a809;
-        transform: scale(1.1); }
-      .container .row .section .title-wrapper .addButton i:active {
-        position: relative;
-        top: 1px; }
-.container .row .section main .card {
-  background-color: transparent;
-  margin-bottom: 1rem; }
-  .container .row .section main .card .card-header {
-    background-color: transparent;
-    cursor: pointer;
-    padding: 0; }
-    .container .row .section main .card .card-header h5 {
-      transition: 0.25s ease-in-out;
-      margin: 0;
-      padding: 1rem; }
-  .container .row .section main .card .card-body {
-    padding: 0; }
-    .container .row .section main .card .card-body table {
+.container .row .section {
+  margin-top: 2rem; }
+  .container .row .section .title-wrapper {
+    margin: 1rem 0;
+    position: relative; }
+    .container .row .section .title-wrapper h3 {
       width: 100%;
-      border-collapse: separate;
-      border-spacing: 0 1rem; }
-      .container .row .section main .card .card-body table thead tr th {
-        color: #393e46;
-        padding: 0;
-        text-align: center; }
-        .container .row .section main .card .card-body table thead tr th:not(:last-child) {
-          border-right: 1px solid rgba(0, 0, 0, 0.1); }
-      .container .row .section main .card .card-body table tbody tr td {
-        border-radius: 5px;
-        color: #393e46;
-        padding: 0;
-        text-align: center; }
-        .container .row .section main .card .card-body table tbody tr td:last-child i {
-          cursor: pointer;
-          transition: 0.1s ease-in-out; }
-        .container .row .section main .card .card-body table tbody tr td:last-child .fa-edit {
-          margin-right: 0.5rem; }
-          .container .row .section main .card .card-body table tbody tr td:last-child .fa-edit:hover {
-            transform: scale(1.1);
-            color: steelblue; }
-        .container .row .section main .card .card-body table tbody tr td:last-child .fa-trash:hover {
-          transform: scale(1.1);
-          color: red; }
+      text-align: center;
+      text-shadow: 0px 5px 5px #969696; }
+    .container .row .section .title-wrapper .addButton {
+      animation: dropLightSaberPurple 2s linear infinite;
+      position: absolute;
+      z-index: 99;
+      right: 0;
+      text-decoration: none; }
+      .container .row .section .title-wrapper .addButton i {
+        color: #ffffff;
+        font-size: 3rem;
+        transition: 0.1s ease-in-out; }
+        .container .row .section .title-wrapper .addButton i:hover {
+          color: #ffffff;
+          transform: scale(1.1); }
+        .container .row .section .title-wrapper .addButton i:active {
+          position: relative;
+          top: 1px; }
+  .container .row .section main {
+    margin-top: 2rem;
+    position: relative; }
+    .container .row .section main img:first-child {
+      transform: scaleX(-1) !important;
+      position: absolute;
+      top: -7rem;
+      left: -3rem; }
+    .container .row .section main img:last-child {
+      animation: dropLightSaberRed 1.5s linear infinite;
+      top: 193px;
+      left: 34px;
+      position: absolute; }
+    .container .row .section main .card {
+      background-color: transparent;
+      margin-bottom: 1rem; }
+      .container .row .section main .card .card-header {
+        background-color: transparent;
+        cursor: pointer;
+        padding: 0; }
+        .container .row .section main .card .card-header h5 {
+          transition: 0.25s ease-in-out;
+          margin: 0;
+          padding: 1rem; }
+      .container .row .section main .card .card-body {
+        padding: 0; }
+        .container .row .section main .card .card-body table {
+          width: 100%;
+          border-collapse: separate;
+          border-spacing: 0 1rem; }
+          .container .row .section main .card .card-body table thead tr th {
+            color: #393e46;
+            padding: 0;
+            text-align: center; }
+            .container .row .section main .card .card-body table thead tr th:not(:last-child) {
+              border-right: 1px solid rgba(0, 0, 0, 0.1); }
+          .container .row .section main .card .card-body table tbody tr td {
+            border-radius: 5px;
+            color: #393e46;
+            padding: 0;
+            text-align: center; }
+            .container .row .section main .card .card-body table tbody tr td:last-child i {
+              cursor: pointer;
+              transition: 0.1s ease-in-out; }
+            .container .row .section main .card .card-body table tbody tr td:last-child .fa-journal-whills {
+              margin-right: 0.5rem;
+              color: #0aa2eb; }
+              .container .row .section main .card .card-body table tbody tr td:last-child .fa-journal-whills:hover {
+                animation: dropLightSaberBlue 1s linear infinite; }
+            .container .row .section main .card .card-body table tbody tr td:last-child .fa-trash {
+              color: #d71d23; }
+              .container .row .section main .card .card-body table tbody tr td:last-child .fa-trash:hover {
+                animation: dropLightSaberRed 1s linear infinite; }
 .container .row .addCharacter {
   margin-top: 1rem; }
   .container .row .addCharacter .backBTN {
@@ -132,15 +152,10 @@ h5 {
     display: flex;
     justify-content: flex-end;
     align-items: center; }
-    .container .row .addCharacter .backBTN button {
-      background-color: #393e46;
+    .container .row .addCharacter .backBTN button i {
+      animation: dropLightSaberWhite 2s linear infinite;
+      font-size: 2rem;
       color: #ffffff; }
-      .container .row .addCharacter .backBTN button:hover {
-        background-color: #222831; }
-      .container .row .addCharacter .backBTN button:active {
-        position: relative;
-        top: 1px;
-        background-color: #222831; }
   .container .row .addCharacter form {
     margin-top: 1rem;
     padding: 1rem;
@@ -163,15 +178,10 @@ h5 {
       justify-content: flex-end;
       align-items: center;
       margin-right: 1.3rem; }
-      .container .row .addCharacter form .button-wrapper button {
-        background-color: #d7a809;
+      .container .row .addCharacter form .button-wrapper button i {
+        font-size: 3rem;
+        animation: dropLightSaberBlue 2s linear infinite;
         color: #ffffff; }
-        .container .row .addCharacter form .button-wrapper button:hover {
-          color: #393e46; }
-        .container .row .addCharacter form .button-wrapper button:active {
-          position: relative;
-          top: 1px;
-          color: #393e46; }
 
 .titleActive {
   padding-left: 3rem !important;

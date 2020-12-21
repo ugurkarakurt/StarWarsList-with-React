@@ -4,10 +4,11 @@ import alertify from "alertifyjs";
 import { Link } from "react-router-dom";
 
 import { currentWorldContext } from "../Store";
+import { homeWorldContext } from "../Store";
 
 
 export default function HomeWorld(props) {
-  const [homeWorld, setHomeWorld] = useState([]);
+  const [homeWorld, setHomeWorld] = useContext(homeWorldContext);
   const [currentWorld] = useContext(currentWorldContext);
 
   useEffect(() => {
