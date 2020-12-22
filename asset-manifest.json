@@ -1,0 +1,27 @@
+{
+  "files": {
+    "main.css": "/VisaFreeCountries/static/css/main.5ba776d6.chunk.css",
+    "main.js": "/VisaFreeCountries/static/js/main.99e9bae7.chunk.js",
+    "main.js.map": "/VisaFreeCountries/static/js/main.99e9bae7.chunk.js.map",
+    "runtime-main.js": "/VisaFreeCountries/static/js/runtime-main.0d4348b1.js",
+    "runtime-main.js.map": "/VisaFreeCountries/static/js/runtime-main.0d4348b1.js.map",
+    "static/css/2.7158b905.chunk.css": "/VisaFreeCountries/static/css/2.7158b905.chunk.css",
+    "static/js/2.23161c22.chunk.js": "/VisaFreeCountries/static/js/2.23161c22.chunk.js",
+    "static/js/2.23161c22.chunk.js.map": "/VisaFreeCountries/static/js/2.23161c22.chunk.js.map",
+    "static/js/3.e7a717db.chunk.js": "/VisaFreeCountries/static/js/3.e7a717db.chunk.js",
+    "static/js/3.e7a717db.chunk.js.map": "/VisaFreeCountries/static/js/3.e7a717db.chunk.js.map",
+    "index.html": "/VisaFreeCountries/index.html",
+    "static/css/2.7158b905.chunk.css.map": "/VisaFreeCountries/static/css/2.7158b905.chunk.css.map",
+    "static/css/main.5ba776d6.chunk.css.map": "/VisaFreeCountries/static/css/main.5ba776d6.chunk.css.map",
+    "static/js/2.23161c22.chunk.js.LICENSE.txt": "/VisaFreeCountries/static/js/2.23161c22.chunk.js.LICENSE.txt",
+    "static/media/darth.bb76b6f3.png": "/VisaFreeCountries/static/media/darth.bb76b6f3.png",
+    "static/media/saber.ac13a252.png": "/VisaFreeCountries/static/media/saber.ac13a252.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.0d4348b1.js",
+    "static/css/2.7158b905.chunk.css",
+    "static/js/2.23161c22.chunk.js",
+    "static/css/main.5ba776d6.chunk.css",
+    "static/js/main.99e9bae7.chunk.js"
+  ]
+}
