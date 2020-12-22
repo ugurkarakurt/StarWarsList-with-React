@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useContext } from "react";
+import React, { useState, useEffect ,useContext} from "react";
 import { ListGroup, ListGroupItem } from "reactstrap";
 import alertify from "alertifyjs";
 import { Link } from "react-router-dom";
@@ -6,16 +6,13 @@ import { Link } from "react-router-dom";
 import { currentWorldContext } from "../Store";
 import { homeWorldContext } from "../Store";
 
-export default function HomeWorld() {
-  const [homeWorld, setHomeWorld] = useContext(homeWorldContext);
-  const [currentWorld, setCurrentWorld] = useContext(currentWorldContext);
 
-  const changeWorld = (worldName) => {
-    setCurrentWorld(worldName.worldName);
-  };
+export default function HomeWorld(props) {
+  const [homeWorld, setHomeWorld] = useContext(homeWorldContext);
+  const [currentWorld] = useContext(currentWorldContext);
 
   useEffect(() => {
-    getHomeWorlds(currentWorld);
+    getHomeWorlds();
   }, []);
 
   const getHomeWorlds = () => {
@@ -38,8 +35,8 @@ export default function HomeWorld() {
         {homeWorld.map((world) => (
           <Link to="/" key={world.id}>
             <ListGroupItem
-              active={world.worldName === currentWorld.name}
-              onClick={() => changeWorld(world)}
+              active={world.worldName === currentWorld}
+              onClick={() => props.changeWorld(world)}
             >
               {world.worldName}
             </ListGroupItem>
